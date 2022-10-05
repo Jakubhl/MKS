@@ -1,0 +1,1655 @@
+14:40:26 **** Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f030r8tx.d" -MT"Startup/startup_stm32f030r8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f030r8tx.o" "../Startup/startup_stm32f030r8tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I../Inc -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Source" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I../Inc -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Source" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I../Inc -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Source" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+    452	      8	   1568	   2028	    7ec	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+14:50:13 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I../Inc -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Source" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I../Inc -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Source" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I../Inc -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Source" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:123:10: fatal error: core_cm0.h: No such file or directory
+  123 | #include "core_cm0.h"            /* Cortex-M0 processor and core peripherals */
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+14:51:50 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I../Inc -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Source" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:123:10: fatal error: core_cm0.h: No such file or directory
+  123 | #include "core_cm0.h"            /* Cortex-M0 processor and core peripherals */
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+14:54:04 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I../Inc -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Source" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:123:10: fatal error: core_cm0.h: No such file or directory
+  123 | #include "core_cm0.h"            /* Cortex-M0 processor and core peripherals */
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:01:43 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I../Inc -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I../Inc -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I../Inc -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:28:2: note: in expansion of macro 'RCC'
+   28 |  RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN; // enable
+      |  ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:28:2: note: in expansion of macro 'RCC'
+   28 |  RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN; // enable
+      |  ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:29:2: note: in expansion of macro 'GPIOA'
+   29 |  GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      |  ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:497:31: error: expected ')' before '(' token
+  497 | #define GPIOA_BASE            (AHB2PERIPH_BASE + 0x00000000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:47: note: in expansion of macro 'GPIOA_BASE'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:29:2: note: in expansion of macro 'GPIOA'
+   29 |  GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      |  ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:30:2: note: in expansion of macro 'GPIOB'
+   30 |  GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      |  ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:498:31: error: expected ')' before '(' token
+  498 | #define GPIOB_BASE            (AHB2PERIPH_BASE + 0x00000400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:47: note: in expansion of macro 'GPIOB_BASE'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:30:2: note: in expansion of macro 'GPIOB'
+   30 |  GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      |  ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:31:2: note: in expansion of macro 'GPIOC'
+   31 |  GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      |  ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:31:2: note: in expansion of macro 'GPIOC'
+   31 |  GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      |  ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:32:3: note: in expansion of macro 'GPIOC'
+   32 |   GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      |   ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:32:3: note: in expansion of macro 'GPIOC'
+   32 |   GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      |   ^~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:02:54 **** Clean-only build of configuration Debug for project MKS_CV1 ****
+make -j4 clean 
+rm -rf ./Startup/startup_stm32f030r8tx.d ./Startup/startup_stm32f030r8tx.o
+rm -rf ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+rm -rf MKS_CV1.elf MKS_CV1.list MKS_CV1.map default.size.stdout
+ 
+15:02:54 **** Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f030r8tx.d" -MT"Startup/startup_stm32f030r8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f030r8tx.o" "../Startup/startup_stm32f030r8tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I../Inc -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I../Inc -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I../Inc -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:28:1: note: in expansion of macro 'RCC'
+   28 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN; // enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:28:1: note: in expansion of macro 'RCC'
+   28 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN; // enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'GPIOA'
+   29 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:497:31: error: expected ')' before '(' token
+  497 | #define GPIOA_BASE            (AHB2PERIPH_BASE + 0x00000000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:47: note: in expansion of macro 'GPIOA_BASE'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'GPIOA'
+   29 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOB'
+   30 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:498:31: error: expected ')' before '(' token
+  498 | #define GPIOB_BASE            (AHB2PERIPH_BASE + 0x00000400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:47: note: in expansion of macro 'GPIOB_BASE'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOB'
+   30 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOC'
+   31 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOC'
+   31 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:05:03 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:28:1: note: in expansion of macro 'RCC'
+   28 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN; // enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:28:1: note: in expansion of macro 'RCC'
+   28 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN; // enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'GPIOA'
+   29 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:497:31: error: expected ')' before '(' token
+  497 | #define GPIOA_BASE            (AHB2PERIPH_BASE + 0x00000000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:47: note: in expansion of macro 'GPIOA_BASE'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'GPIOA'
+   29 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOB'
+   30 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:498:31: error: expected ')' before '(' token
+  498 | #define GPIOB_BASE            (AHB2PERIPH_BASE + 0x00000400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:47: note: in expansion of macro 'GPIOB_BASE'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOB'
+   30 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOC'
+   31 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOC'
+   31 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:06:33 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:21:10: fatal error: STM32F030x8: No such file or directory
+   21 | #include "STM32F030x8"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:07:16 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN; // enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN; // enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:497:31: error: expected ')' before '(' token
+  497 | #define GPIOA_BASE            (AHB2PERIPH_BASE + 0x00000000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:47: note: in expansion of macro 'GPIOA_BASE'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:498:31: error: expected ')' before '(' token
+  498 | #define GPIOB_BASE            (AHB2PERIPH_BASE + 0x00000400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:47: note: in expansion of macro 'GPIOB_BASE'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:08:09 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN; // enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN; // enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:497:31: error: expected ')' before '(' token
+  497 | #define GPIOA_BASE            (AHB2PERIPH_BASE + 0x00000000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:47: note: in expansion of macro 'GPIOA_BASE'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:498:31: error: expected ')' before '(' token
+  498 | #define GPIOB_BASE            (AHB2PERIPH_BASE + 0x00000400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:47: note: in expansion of macro 'GPIOB_BASE'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:09:53 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN;// enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN;// enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:497:31: error: expected ')' before '(' token
+  497 | #define GPIOA_BASE            (AHB2PERIPH_BASE + 0x00000000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:47: note: in expansion of macro 'GPIOA_BASE'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:498:31: error: expected ')' before '(' token
+  498 | #define GPIOB_BASE            (AHB2PERIPH_BASE + 0x00000400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:47: note: in expansion of macro 'GPIOB_BASE'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:10:48 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:21:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN;// enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN;// enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:497:31: error: expected ')' before '(' token
+  497 | #define GPIOA_BASE            (AHB2PERIPH_BASE + 0x00000000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:47: note: in expansion of macro 'GPIOA_BASE'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:498:31: error: expected ')' before '(' token
+  498 | #define GPIOB_BASE            (AHB2PERIPH_BASE + 0x00000400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:47: note: in expansion of macro 'GPIOB_BASE'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:11:05 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN;// enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN;// enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:497:31: error: expected ')' before '(' token
+  497 | #define GPIOA_BASE            (AHB2PERIPH_BASE + 0x00000000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:47: note: in expansion of macro 'GPIOA_BASE'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:498:31: error: expected ')' before '(' token
+  498 | #define GPIOB_BASE            (AHB2PERIPH_BASE + 0x00000400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:47: note: in expansion of macro 'GPIOB_BASE'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:13:52 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN;// enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN;// enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:497:31: error: expected ')' before '(' token
+  497 | #define GPIOA_BASE            (AHB2PERIPH_BASE + 0x00000000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:47: note: in expansion of macro 'GPIOA_BASE'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:498:31: error: expected ')' before '(' token
+  498 | #define GPIOB_BASE            (AHB2PERIPH_BASE + 0x00000400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:47: note: in expansion of macro 'GPIOB_BASE'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:35:1: note: in expansion of macro 'RCC'
+   35 | RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:35:1: note: in expansion of macro 'RCC'
+   35 | RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:522:31: error: expected identifier or '(' before 'SYSCFG_TypeDef'
+  522 | #define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+      |                               ^~~~~~~~~~~~~~
+../Src/main.c:37:1: note: in expansion of macro 'SYSCFG'
+   37 | SYSCFG->EXTICR[0] |= SYSCFG_EXTICR1_EXTI0_PC; // select PC0 for EXTI0
+      | ^~~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:473:31: error: expected ')' before '(' token
+  473 | #define SYSCFG_BASE           (APBPERIPH_BASE + 0x00010000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:522:49: note: in expansion of macro 'SYSCFG_BASE'
+  522 | #define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+      |                                                 ^~~~~~~~~~~
+../Src/main.c:37:1: note: in expansion of macro 'SYSCFG'
+   37 | SYSCFG->EXTICR[0] |= SYSCFG_EXTICR1_EXTI0_PC; // select PC0 for EXTI0
+      | ^~~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:31: error: expected identifier or '(' before 'EXTI_TypeDef'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:38:2: note: in expansion of macro 'EXTI'
+   38 |  EXTI->IMR |= EXTI_IMR_MR0; // mask
+      |  ^~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:474:31: error: expected ')' before '(' token
+  474 | #define EXTI_BASE             (APBPERIPH_BASE + 0x00010400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:47: note: in expansion of macro 'EXTI_BASE'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                                               ^~~~~~~~~
+../Src/main.c:38:2: note: in expansion of macro 'EXTI'
+   38 |  EXTI->IMR |= EXTI_IMR_MR0; // mask
+      |  ^~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:31: error: expected identifier or '(' before 'EXTI_TypeDef'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:39:2: note: in expansion of macro 'EXTI'
+   39 |  EXTI->FTSR |= EXTI_FTSR_TR0; // trigger on falling edge
+      |  ^~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:474:31: error: expected ')' before '(' token
+  474 | #define EXTI_BASE             (APBPERIPH_BASE + 0x00010400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:47: note: in expansion of macro 'EXTI_BASE'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                                               ^~~~~~~~~
+../Src/main.c:39:2: note: in expansion of macro 'EXTI'
+   39 |  EXTI->FTSR |= EXTI_FTSR_TR0; // trigger on falling edge
+      |  ^~~~
+../Src/main.c:40:2: warning: data definition has no type or storage class
+   40 |  NVIC_EnableIRQ(EXTI0_1_IRQn); // enable EXTI0_1
+      |  ^~~~~~~~~~~~~~
+../Src/main.c:40:2: warning: type defaults to 'int' in declaration of 'NVIC_EnableIRQ' [-Wimplicit-int]
+../Src/main.c:40:2: warning: parameter names (without types) in function declaration
+../Src/main.c:40:2: error: conflicting types for 'NVIC_EnableIRQ'
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:123,
+                 from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include/core_cm0.h:544:22: note: previous definition of 'NVIC_EnableIRQ' was here
+  544 | __STATIC_INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+      |                      ^~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:14:13 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN;// enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN;// enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:497:31: error: expected ')' before '(' token
+  497 | #define GPIOA_BASE            (AHB2PERIPH_BASE + 0x00000000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:47: note: in expansion of macro 'GPIOA_BASE'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:498:31: error: expected ')' before '(' token
+  498 | #define GPIOB_BASE            (AHB2PERIPH_BASE + 0x00000400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:47: note: in expansion of macro 'GPIOB_BASE'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:35:1: note: in expansion of macro 'RCC'
+   35 | RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:35:1: note: in expansion of macro 'RCC'
+   35 | RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:522:31: error: expected identifier or '(' before 'SYSCFG_TypeDef'
+  522 | #define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+      |                               ^~~~~~~~~~~~~~
+../Src/main.c:37:1: note: in expansion of macro 'SYSCFG'
+   37 | SYSCFG->EXTICR[0] |= SYSCFG_EXTICR1_EXTI0_PC; // select PC0 for EXTI0
+      | ^~~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:473:31: error: expected ')' before '(' token
+  473 | #define SYSCFG_BASE           (APBPERIPH_BASE + 0x00010000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:522:49: note: in expansion of macro 'SYSCFG_BASE'
+  522 | #define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+      |                                                 ^~~~~~~~~~~
+../Src/main.c:37:1: note: in expansion of macro 'SYSCFG'
+   37 | SYSCFG->EXTICR[0] |= SYSCFG_EXTICR1_EXTI0_PC; // select PC0 for EXTI0
+      | ^~~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:31: error: expected identifier or '(' before 'EXTI_TypeDef'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:38:2: note: in expansion of macro 'EXTI'
+   38 |  EXTI->IMR |= EXTI_IMR_MR0; // mask
+      |  ^~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:474:31: error: expected ')' before '(' token
+  474 | #define EXTI_BASE             (APBPERIPH_BASE + 0x00010400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:47: note: in expansion of macro 'EXTI_BASE'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                                               ^~~~~~~~~
+../Src/main.c:38:2: note: in expansion of macro 'EXTI'
+   38 |  EXTI->IMR |= EXTI_IMR_MR0; // mask
+      |  ^~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:31: error: expected identifier or '(' before 'EXTI_TypeDef'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:39:2: note: in expansion of macro 'EXTI'
+   39 |  EXTI->FTSR |= EXTI_FTSR_TR0; // trigger on falling edge
+      |  ^~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:474:31: error: expected ')' before '(' token
+  474 | #define EXTI_BASE             (APBPERIPH_BASE + 0x00010400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:47: note: in expansion of macro 'EXTI_BASE'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                                               ^~~~~~~~~
+../Src/main.c:39:2: note: in expansion of macro 'EXTI'
+   39 |  EXTI->FTSR |= EXTI_FTSR_TR0; // trigger on falling edge
+      |  ^~~~
+../Src/main.c:40:2: warning: data definition has no type or storage class
+   40 |  NVIC_EnableIRQ(EXTI0_1_IRQn); // enable EXTI0_1
+      |  ^~~~~~~~~~~~~~
+../Src/main.c:40:2: warning: type defaults to 'int' in declaration of 'NVIC_EnableIRQ' [-Wimplicit-int]
+../Src/main.c:40:2: warning: parameter names (without types) in function declaration
+../Src/main.c:40:2: error: conflicting types for 'NVIC_EnableIRQ'
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:123,
+                 from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include/core_cm0.h:544:22: note: previous definition of 'NVIC_EnableIRQ' was here
+  544 | __STATIC_INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+      |                      ^~~~~~~~~~~~~~
+../Src/main.c: In function 'EXTI0_1_IRQHandler':
+../Src/main.c:46:10: error: expected identifier before numeric constant
+   46 |   GPIOB->1;
+      |          ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:14:29 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN;// enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN;// enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:497:31: error: expected ')' before '(' token
+  497 | #define GPIOA_BASE            (AHB2PERIPH_BASE + 0x00000000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:47: note: in expansion of macro 'GPIOA_BASE'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:498:31: error: expected ')' before '(' token
+  498 | #define GPIOB_BASE            (AHB2PERIPH_BASE + 0x00000400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:47: note: in expansion of macro 'GPIOB_BASE'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:35:1: note: in expansion of macro 'RCC'
+   35 | RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:35:1: note: in expansion of macro 'RCC'
+   35 | RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:522:31: error: expected identifier or '(' before 'SYSCFG_TypeDef'
+  522 | #define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+      |                               ^~~~~~~~~~~~~~
+../Src/main.c:37:1: note: in expansion of macro 'SYSCFG'
+   37 | SYSCFG->EXTICR[0] |= SYSCFG_EXTICR1_EXTI0_PC; // select PC0 for EXTI0
+      | ^~~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:473:31: error: expected ')' before '(' token
+  473 | #define SYSCFG_BASE           (APBPERIPH_BASE + 0x00010000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:522:49: note: in expansion of macro 'SYSCFG_BASE'
+  522 | #define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+      |                                                 ^~~~~~~~~~~
+../Src/main.c:37:1: note: in expansion of macro 'SYSCFG'
+   37 | SYSCFG->EXTICR[0] |= SYSCFG_EXTICR1_EXTI0_PC; // select PC0 for EXTI0
+      | ^~~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:31: error: expected identifier or '(' before 'EXTI_TypeDef'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:38:2: note: in expansion of macro 'EXTI'
+   38 |  EXTI->IMR |= EXTI_IMR_MR0; // mask
+      |  ^~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:474:31: error: expected ')' before '(' token
+  474 | #define EXTI_BASE             (APBPERIPH_BASE + 0x00010400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:47: note: in expansion of macro 'EXTI_BASE'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                                               ^~~~~~~~~
+../Src/main.c:38:2: note: in expansion of macro 'EXTI'
+   38 |  EXTI->IMR |= EXTI_IMR_MR0; // mask
+      |  ^~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:31: error: expected identifier or '(' before 'EXTI_TypeDef'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:39:2: note: in expansion of macro 'EXTI'
+   39 |  EXTI->FTSR |= EXTI_FTSR_TR0; // trigger on falling edge
+      |  ^~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:474:31: error: expected ')' before '(' token
+  474 | #define EXTI_BASE             (APBPERIPH_BASE + 0x00010400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:47: note: in expansion of macro 'EXTI_BASE'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                                               ^~~~~~~~~
+../Src/main.c:39:2: note: in expansion of macro 'EXTI'
+   39 |  EXTI->FTSR |= EXTI_FTSR_TR0; // trigger on falling edge
+      |  ^~~~
+../Src/main.c:40:2: warning: data definition has no type or storage class
+   40 |  NVIC_EnableIRQ(EXTI0_1_IRQn); // enable EXTI0_1
+      |  ^~~~~~~~~~~~~~
+../Src/main.c:40:2: warning: type defaults to 'int' in declaration of 'NVIC_EnableIRQ' [-Wimplicit-int]
+../Src/main.c:40:2: warning: parameter names (without types) in function declaration
+../Src/main.c:40:2: error: conflicting types for 'NVIC_EnableIRQ'
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:123,
+                 from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include/core_cm0.h:544:22: note: previous definition of 'NVIC_EnableIRQ' was here
+  544 | __STATIC_INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+      |                      ^~~~~~~~~~~~~~
+../Src/main.c: In function 'EXTI0_1_IRQHandler':
+../Src/main.c:46:8: error: 'GPIO_TypeDef' has no member named 'HIGH'
+   46 |   GPIOB->HIGH;
+      |        ^~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:14:41 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN;// enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:29:1: note: in expansion of macro 'RCC'
+   29 | RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN;// enable
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:497:31: error: expected ')' before '(' token
+  497 | #define GPIOA_BASE            (AHB2PERIPH_BASE + 0x00000000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:543:47: note: in expansion of macro 'GPIOA_BASE'
+  543 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:30:1: note: in expansion of macro 'GPIOA'
+   30 | GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:498:31: error: expected ')' before '(' token
+  498 | #define GPIOB_BASE            (AHB2PERIPH_BASE + 0x00000400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:544:47: note: in expansion of macro 'GPIOB_BASE'
+  544 | #define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:31:1: note: in expansion of macro 'GPIOB'
+   31 | GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:32:1: note: in expansion of macro 'GPIOC'
+   32 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:31: error: expected identifier or '(' before 'GPIO_TypeDef'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:499:31: error: expected ')' before '(' token
+  499 | #define GPIOC_BASE            (AHB2PERIPH_BASE + 0x00000800)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:545:47: note: in expansion of macro 'GPIOC_BASE'
+  545 | #define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+      |                                               ^~~~~~~~~~
+../Src/main.c:33:1: note: in expansion of macro 'GPIOC'
+   33 | GPIOC->PUPDR |= GPIO_PUPDR_PUPDR1_0; // S1 = PC1, pullup
+      | ^~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:31: error: expected identifier or '(' before 'RCC_TypeDef'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                               ^~~~~~~~~~~
+../Src/main.c:35:1: note: in expansion of macro 'RCC'
+   35 | RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:492:31: error: expected ')' before '(' token
+  492 | #define RCC_BASE              (AHBPERIPH_BASE + 0x00001000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:541:46: note: in expansion of macro 'RCC_BASE'
+  541 | #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+      |                                              ^~~~~~~~
+../Src/main.c:35:1: note: in expansion of macro 'RCC'
+   35 | RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN;
+      | ^~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:522:31: error: expected identifier or '(' before 'SYSCFG_TypeDef'
+  522 | #define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+      |                               ^~~~~~~~~~~~~~
+../Src/main.c:37:1: note: in expansion of macro 'SYSCFG'
+   37 | SYSCFG->EXTICR[0] |= SYSCFG_EXTICR1_EXTI0_PC; // select PC0 for EXTI0
+      | ^~~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:473:31: error: expected ')' before '(' token
+  473 | #define SYSCFG_BASE           (APBPERIPH_BASE + 0x00010000)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:522:49: note: in expansion of macro 'SYSCFG_BASE'
+  522 | #define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+      |                                                 ^~~~~~~~~~~
+../Src/main.c:37:1: note: in expansion of macro 'SYSCFG'
+   37 | SYSCFG->EXTICR[0] |= SYSCFG_EXTICR1_EXTI0_PC; // select PC0 for EXTI0
+      | ^~~~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:31: error: expected identifier or '(' before 'EXTI_TypeDef'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:38:2: note: in expansion of macro 'EXTI'
+   38 |  EXTI->IMR |= EXTI_IMR_MR0; // mask
+      |  ^~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:474:31: error: expected ')' before '(' token
+  474 | #define EXTI_BASE             (APBPERIPH_BASE + 0x00010400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:47: note: in expansion of macro 'EXTI_BASE'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                                               ^~~~~~~~~
+../Src/main.c:38:2: note: in expansion of macro 'EXTI'
+   38 |  EXTI->IMR |= EXTI_IMR_MR0; // mask
+      |  ^~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:31: error: expected identifier or '(' before 'EXTI_TypeDef'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                               ^~~~~~~~~~~~
+../Src/main.c:39:2: note: in expansion of macro 'EXTI'
+   39 |  EXTI->FTSR |= EXTI_FTSR_TR0; // trigger on falling edge
+      |  ^~~~
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:474:31: error: expected ')' before '(' token
+  474 | #define EXTI_BASE             (APBPERIPH_BASE + 0x00010400)
+      |                               ^
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:523:47: note: in expansion of macro 'EXTI_BASE'
+  523 | #define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+      |                                               ^~~~~~~~~
+../Src/main.c:39:2: note: in expansion of macro 'EXTI'
+   39 |  EXTI->FTSR |= EXTI_FTSR_TR0; // trigger on falling edge
+      |  ^~~~
+../Src/main.c:40:2: warning: data definition has no type or storage class
+   40 |  NVIC_EnableIRQ(EXTI0_1_IRQn); // enable EXTI0_1
+      |  ^~~~~~~~~~~~~~
+../Src/main.c:40:2: warning: type defaults to 'int' in declaration of 'NVIC_EnableIRQ' [-Wimplicit-int]
+../Src/main.c:40:2: warning: parameter names (without types) in function declaration
+../Src/main.c:40:2: error: conflicting types for 'NVIC_EnableIRQ'
+In file included from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f030x8.h:123,
+                 from C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:130,
+                 from ../Src/main.c:20:
+C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include/core_cm0.h:544:22: note: previous definition of 'NVIC_EnableIRQ' was here
+  544 | __STATIC_INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+      |                      ^~~~~~~~~~~~~~
+../Src/main.c: In function 'EXTI0_1_IRQHandler':
+../Src/main.c:46:11: error: expected identifier before numeric constant
+   46 |   GPIOB-> 1;
+      |           ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:18:26 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+    684	      8	   1568	   2260	    8d4	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+15:19:56 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+    684	      8	   1568	   2260	    8d4	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+15:20:35 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+    684	      8	   1568	   2260	    8d4	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+15:29:42 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'SysTick_Handler':
+../Src/main.c:39:3: error: 'Tick' undeclared (first use in this function)
+   39 |   Tick++;
+      |   ^~~~
+../Src/main.c:39:3: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c: In function 'blikac':
+../Src/main.c:46:7: error: 'Tick' undeclared (first use in this function)
+   46 |   if (Tick > delay + LED_TIME_BLINK) {
+      |       ^~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:31:23 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+    964	      8	   1568	   2540	    9ec	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+15:36:13 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1028	      8	   1576	   2612	    a34	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+15:42:36 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'tlacitka':
+../Src/main.c:57:3: error: 'off_time' undeclared (first use in this function)
+   57 |   off_time = Tick + LED_TIME_SHORT;
+      |   ^~~~~~~~
+../Src/main.c:57:3: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:57:21: error: 'LED_TIME_SHORT' undeclared (first use in this function)
+   57 |   off_time = Tick + LED_TIME_SHORT;
+      |                     ^~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:43:28 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'tlacitka':
+../Src/main.c:58:3: error: 'off_time' undeclared (first use in this function)
+   58 |   off_time = Tick + LED_TIME_SHORT;
+      |   ^~~~~~~~
+../Src/main.c:58:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:43:50 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'tlacitka':
+../Src/main.c:58:3: error: 'off_time' undeclared (first use in this function)
+   58 |   off_time = Tick + LED_TIME_SHORT;
+      |   ^~~~~~~~
+../Src/main.c:58:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:44:34 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1076	      8	   1584	   2668	    a6c	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+15:45:58 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1072	      8	   1576	   2656	    a60	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+15:48:39 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1068	      8	   1576	   2652	    a5c	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+15:49:04 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1064	      8	   1576	   2648	    a58	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+15:51:36 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'tlacitka':
+../Src/main.c:62:3: error: 'off_time' undeclared (first use in this function)
+   62 |   off_time = Tick + LED_TIME_SHORT;
+      |   ^~~~~~~~
+../Src/main.c:62:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:52:01 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1068	      8	   1576	   2652	    a5c	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+15:56:33 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1132	      8	   1584	   2724	    aa4	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+15:57:58 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1072	      8	   1576	   2656	    a60	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+15:59:39 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1072	      8	   1576	   2656	    a60	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+16:01:52 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-size   MKS_CV1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1072	      8	   1576	   2656	    a60	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+16:04:51 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1020	      8	   1576	   2604	    a2c	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+16:09:45 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'tlacitka':
+../Src/main.c:56:18: warning: variable 'old_s1' set but not used [-Wunused-but-set-variable]
+   56 |  static uint32_t old_s1;
+      |                  ^~~~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1076	      8	   1584	   2668	    a6c	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+16:10:21 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1076	      8	   1584	   2668	    a6c	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
