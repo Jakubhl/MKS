@@ -26,7 +26,7 @@
 
 #define LED_TIME_BLINK 300
 #define LED_TIME_SHORT 1000
-#define LED_TIME_LONG 3000
+#define LED_TIME_LONG 5000
 volatile uint32_t Tick;
 
 //void EXTI0_1_IRQHandler(void)
@@ -50,25 +50,23 @@ void blikac(void) {
 	}
 }
 
-void zakmity(void) {
-	static uint32_t Tick_old;
+void zakmity(void){
+	static uint32_t delay;
 	static uint16_t debounce = 0xFFFF;
+	debounce <= 1;
+	if(GPIOC->IDR & (1<<1)) debounce |= 0x0001;
+	if(debounce == 0x8000){
 
-	if (Tick > (Tick_old+5)) {
 
-		debounce <<= 1;
-		Tick_old = Tick;
+			if (debounce == 0x7FF) { // falling edge
+				GPIOB->ODR ^= (1<<0);
+				delay = Tick;
+			}
 
-		if (GPIOC->IDR & (1 << 1))
-			debounce |= 0x0001;
-		if (debounce == 0x7FFF) { // falling edge
-			GPIOA->ODR ^= (1 << 4);
-
-		}
 
 	}
-
 }
+
 
 void tlacitka(void) {
 
@@ -76,9 +74,10 @@ void tlacitka(void) {
 	static uint32_t old_s1;
 	static uint32_t old_s2;
 
+
+
 	uint32_t new_s2 = GPIOC->IDR & (1 << 0);
 	uint32_t new_s1 = GPIOC->IDR & (1 << 1);
-
 
 	if (old_s2 && !new_s2) { // falling edge
 		off_time = Tick + LED_TIME_SHORT;
@@ -118,8 +117,7 @@ int main(void) {
 	/* Loop forever */
 	for (;;) {
 		//blikac();
-		tlacitka();
+		//tlacitka();
 		zakmity();
-
 	}
 }

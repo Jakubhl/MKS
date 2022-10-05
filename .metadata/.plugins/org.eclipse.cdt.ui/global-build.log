@@ -1653,3 +1653,327 @@ Finished building: default.size.stdout
  
 Finished building: MKS_CV1.list
  
+16:29:37 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:55:11: warning: statement with no effect [-Wunused-value]
+   55 |  debounce <= 1;
+      |  ~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1116	     12	   1580	   2708	    a94	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+16:36:22 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:55:11: warning: statement with no effect [-Wunused-value]
+   55 |  debounce <= 1;
+      |  ~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1000	     12	   1572	   2584	    a18	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+16:38:16 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:55:11: warning: statement with no effect [-Wunused-value]
+   55 |  debounce <= 1;
+      |  ~~~~~~~~~^~~~
+../Src/main.c:62:5: error: 'delay' undeclared (first use in this function)
+   62 |     delay = Tick;
+      |     ^~~~~
+../Src/main.c:62:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:38:55 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:56:11: warning: statement with no effect [-Wunused-value]
+   56 |  debounce <= 1;
+      |  ~~~~~~~~~^~~~
+../Src/main.c:54:18: warning: variable 'delay' set but not used [-Wunused-but-set-variable]
+   54 |  static uint32_t delay;
+      |                  ^~~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1016	     12	   1572	   2600	    a28	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+16:40:38 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:56:11: warning: statement with no effect [-Wunused-value]
+   56 |  debounce <= 1;
+      |  ~~~~~~~~~^~~~
+../Src/main.c:54:18: warning: variable 'delay' set but not used [-Wunused-but-set-variable]
+   54 |  static uint32_t delay;
+      |                  ^~~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1184	     12	   1588	   2784	    ae0	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+16:41:58 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:56:11: warning: statement with no effect [-Wunused-value]
+   56 |  debounce <= 1;
+      |  ~~~~~~~~~^~~~
+../Src/main.c:54:18: warning: variable 'delay' set but not used [-Wunused-but-set-variable]
+   54 |  static uint32_t delay;
+      |                  ^~~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1180	     12	   1588	   2780	    adc	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+16:49:32 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:57:11: warning: statement with no effect [-Wunused-value]
+   57 |  debounce <= 1;
+      |  ~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1172	     12	   1580	   2764	    acc	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+16:58:33 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:66:12: warning: statement with no effect [-Wunused-value]
+   66 |   debounce <= 1;
+      |   ~~~~~~~~~^~~~
+../Src/main.c: In function 'main':
+../Src/main.c:137:3: warning: implicit declaration of function 'priod'; did you mean 'period'? [-Wimplicit-function-declaration]
+  137 |   priod();
+      |   ^~~~~
+      |   period
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\appz\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Src/main.o: in function `main':
+C:/Temp/Hlavacek/MKS/MKS_CV1/Debug/../Src/main.c:137: undefined reference to `priod'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:63: MKS_CV1.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:58:56 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:62:12: warning: statement with no effect [-Wunused-value]
+   62 |   debounce <= 1;
+      |   ~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1200	     12	   1588	   2800	    af0	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+17:00:07 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:62:12: warning: statement with no effect [-Wunused-value]
+   62 |   debounce <= 1;
+      |   ~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1200	     16	   1584	   2800	    af0	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+17:01:15 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:62:12: warning: statement with no effect [-Wunused-value]
+   62 |   debounce <= 1;
+      |   ~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1204	     16	   1584	   2804	    af4	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+17:02:10 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:62:12: warning: statement with no effect [-Wunused-value]
+   62 |   debounce <= 1;
+      |   ~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1200	     16	   1584	   2800	    af0	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+17:03:46 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:62:12: warning: statement with no effect [-Wunused-value]
+   62 |   debounce <= 1;
+      |   ~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1188	     16	   1584	   2788	    ae4	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+17:06:06 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:62:12: warning: statement with no effect [-Wunused-value]
+   62 |   debounce <= 1;
+      |   ~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+    976	      8	   1576	   2560	    a00	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+17:06:30 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:62:12: warning: statement with no effect [-Wunused-value]
+   62 |   debounce <= 1;
+      |   ~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1184	     16	   1584	   2784	    ae0	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+17:12:38 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:59:12: warning: statement with no effect [-Wunused-value]
+   59 |   debounce <= 1;
+      |   ~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1188	     12	   1588	   2788	    ae4	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+17:13:46 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'zakmity':
+../Src/main.c:59:12: warning: statement with no effect [-Wunused-value]
+   59 |   debounce <= 1;
+      |   ~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1184	     12	   1588	   2784	    ae0	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 
+17:14:58 **** Incremental Build of configuration Debug for project MKS_CV1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F030R8Tx -DSTM32F030x8 -DSTM32 -DSTM32F0 -DNUCLEO_F030R8 -c -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Include" -I"C:/Temp/Hlavacek/MKS/MKS_CV1/CMSIS/Device/ST/STM32F0xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV1.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV1\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV1.elf
+ 
+arm-none-eabi-size   MKS_CV1.elf 
+arm-none-eabi-objdump -h -S  MKS_CV1.elf  > "MKS_CV1.list"
+   text	   data	    bss	    dec	    hex	filename
+   1196	     12	   1588	   2796	    aec	MKS_CV1.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV1.list
+ 

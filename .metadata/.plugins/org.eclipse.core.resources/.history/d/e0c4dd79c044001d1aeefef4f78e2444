@@ -56,7 +56,7 @@ void zakmity(void) {
 
 	if (Tick > (Tick_old+5)) {
 
-		debounce <<= 1;
+		debounce <= 1;
 		Tick_old = Tick;
 
 		if (GPIOC->IDR & (1 << 1))
@@ -77,6 +77,7 @@ void tlacitka(void) {
 	static uint32_t old_s2;
 
 	uint32_t new_s2 = GPIOC->IDR & (1 << 0);
+
 	uint32_t new_s1 = GPIOC->IDR & (1 << 1);
 
 
