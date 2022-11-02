@@ -1,0 +1,10 @@
+17:21:38 **** Incremental Build of configuration Debug for project MKS_CV5 ****
+make -j4 all 
+arm-none-eabi-size   MKS_CV5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14584	     24	   1776	  16384	   4000	MKS_CV5.elf
+Finished building: default.size.stdout
+ 
+
+17:21:39 Build Finished. 0 errors, 0 warnings. (took 441ms)
+
