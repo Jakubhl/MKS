@@ -1,339 +1,353 @@
-16:43:53 **** Incremental Build of configuration Debug for project MKS_CV5 ****
+16:18:02 **** Incremental Build of configuration Debug for project MKS_CV6 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
-arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
-arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
-arm-none-eabi-gcc "../Core/Src/system_stm32f0xx.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f0xx.d" -MT"Core/Src/system_stm32f0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f0xx.o"
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
  
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
    text	   data	    bss	    dec	    hex	filename
-  14500	     24	   1768	  16292	   3fa4	MKS_CV5.elf
+  26780	    140	   5972	  32892	   807c	MKS_CV6.elf
 Finished building: default.size.stdout
  
-Finished building: MKS_CV5.list
+Finished building: MKS_CV6.list
  
-16:44:03 **** Incremental Build of configuration Debug for project MKS_CV5 ****
+16:18:11 **** Incremental Build of configuration Debug for project MKS_CV6 ****
 make -j4 all 
-arm-none-eabi-size   MKS_CV5.elf 
+arm-none-eabi-size   MKS_CV6.elf 
    text	   data	    bss	    dec	    hex	filename
-  14500	     24	   1768	  16292	   3fa4	MKS_CV5.elf
+  26780	    140	   5972	  32892	   807c	MKS_CV6.elf
 Finished building: default.size.stdout
  
-16:45:42 **** Incremental Build of configuration Debug for project MKS_CV5 ****
+16:21:34 **** Incremental Build of configuration Debug for project MKS_CV6 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
  
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
    text	   data	    bss	    dec	    hex	filename
-  14588	     24	   1768	  16380	   3ffc	MKS_CV5.elf
+  26780	    140	   5972	  32892	   807c	MKS_CV6.elf
 Finished building: default.size.stdout
  
-Finished building: MKS_CV5.list
+Finished building: MKS_CV6.list
  
-16:52:16 **** Incremental Build of configuration Debug for project MKS_CV5 ****
+16:22:13 **** Incremental Build of configuration Debug for project MKS_CV6 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:181:1: error: expected identifier or '(' before '}' token
-  181 | }
-      | ^
-make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+arm-none-eabi-size   MKS_CV6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26780	    140	   5972	  32892	   807c	MKS_CV6.elf
+Finished building: default.size.stdout
+ 
+16:25:14 **** Incremental Build of configuration Debug for project MKS_CV6 ****
+make -j4 all 
+arm-none-eabi-size   MKS_CV6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26780	    140	   5972	  32892	   807c	MKS_CV6.elf
+Finished building: default.size.stdout
+ 
+16:25:28 **** Incremental Build of configuration Debug for project MKS_CV6 ****
+make -j4 all 
+arm-none-eabi-size   MKS_CV6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26780	    140	   5972	  32892	   807c	MKS_CV6.elf
+Finished building: default.size.stdout
+ 
+16:26:28 **** Incremental Build of configuration Debug for project MKS_CV6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
+ 
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
+   text	   data	    bss	    dec	    hex	filename
+  26780	    140	   5972	  32892	   807c	MKS_CV6.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV6.list
+ 
+16:27:08 **** Incremental Build of configuration Debug for project MKS_CV6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
+ 
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
+   text	   data	    bss	    dec	    hex	filename
+  26480	    140	   5972	  32592	   7f50	MKS_CV6.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV6.list
+ 
+16:28:15 **** Incremental Build of configuration Debug for project MKS_CV6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
+ 
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
+   text	   data	    bss	    dec	    hex	filename
+  26656	    140	   5972	  32768	   8000	MKS_CV6.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV6.list
+ 
+16:29:27 **** Incremental Build of configuration Debug for project MKS_CV6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
+ 
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
+   text	   data	    bss	    dec	    hex	filename
+  26480	    140	   5972	  32592	   7f50	MKS_CV6.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV6.list
+ 
+16:31:33 **** Incremental Build of configuration Debug for project MKS_CV6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
+ 
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
+   text	   data	    bss	    dec	    hex	filename
+  26480	    140	   5972	  32592	   7f50	MKS_CV6.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV6.list
+ 
+16:32:49 **** Incremental Build of configuration Debug for project MKS_CV6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:59,
+                 from ../Core/Src/main.c:21:
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:460:36: error: 'msg' undeclared (first use in this function)
+  460 |    xQueueSend(xVisualQueueHandle, &msg, raw_acceleration[0]);
+      |                                    ^~~
+../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:477:92: note: in definition of macro 'xQueueSend'
+  477 | #define xQueueSend( xQueue, pvItemToQueue, xTicksToWait ) xQueueGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_BACK )
+      |                                                                                            ^~~~~~~~~~~~~
+../Core/Src/main.c:460:36: note: each undeclared identifier is reported only once for each function it appears in
+  460 |    xQueueSend(xVisualQueueHandle, &msg, raw_acceleration[0]);
+      |                                    ^~~
+../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:477:92: note: in definition of macro 'xQueueSend'
+  477 | #define xQueueSend( xQueue, pvItemToQueue, xTicksToWait ) xQueueGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_BACK )
+      |                                                                                            ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
 "make -j4 all" terminated with exit code 2. Build might be incomplete.
-16:52:38 **** Incremental Build of configuration Debug for project MKS_CV5 ****
+16:33:08 **** Incremental Build of configuration Debug for project MKS_CV6 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
  
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
    text	   data	    bss	    dec	    hex	filename
-  14532	     24	   1768	  16324	   3fc4	MKS_CV5.elf
+  26512	    140	   5972	  32624	   7f70	MKS_CV6.elf
 Finished building: default.size.stdout
  
-Finished building: MKS_CV5.list
+Finished building: MKS_CV6.list
  
-16:55:04 **** Incremental Build of configuration Debug for project MKS_CV5 ****
+16:33:50 **** Incremental Build of configuration Debug for project MKS_CV6 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:400:41: error: 'msg' undeclared (first use in this function)
+  400 |  if (xQueueReceive(xVisualQueueHandle, &msg, portMAX_DELAY)) {
+      |                                         ^~~
+../Core/Src/main.c:400:41: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:34:47 **** Incremental Build of configuration Debug for project MKS_CV6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:399:2: error: 'msg' undeclared (first use in this function)
+  399 |  msg = platform_read(xVisualQueueHandle, reg, bufp, len)
+      |  ^~~
+../Core/Src/main.c:399:2: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:399:42: error: 'reg' undeclared (first use in this function)
+  399 |  msg = platform_read(xVisualQueueHandle, reg, bufp, len)
+      |                                          ^~~
+../Core/Src/main.c:399:47: error: 'bufp' undeclared (first use in this function)
+  399 |  msg = platform_read(xVisualQueueHandle, reg, bufp, len)
+      |                                               ^~~~
+../Core/Src/main.c:399:53: error: 'len' undeclared (first use in this function)
+  399 |  msg = platform_read(xVisualQueueHandle, reg, bufp, len)
+      |                                                     ^~~
+../Core/Src/main.c:399:57: error: expected ';' before 'if'
+  399 |  msg = platform_read(xVisualQueueHandle, reg, bufp, len)
+      |                                                         ^
+      |                                                         ;
+  400 |  if (xQueueReceive(xVisualQueueHandle, &msg, portMAX_DELAY)) {
+      |  ~~                                                      
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:36:22 **** Incremental Build of configuration Debug for project MKS_CV6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:400:41: error: 'msg' undeclared (first use in this function)
+  400 |  if (xQueueReceive(xVisualQueueHandle, &msg, portMAX_DELAY)) {
+      |                                         ^~~
+../Core/Src/main.c:400:41: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:37:37 **** Incremental Build of configuration Debug for project MKS_CV6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
  
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
    text	   data	    bss	    dec	    hex	filename
-  14532	     24	   1768	  16324	   3fc4	MKS_CV5.elf
+  25652	    140	   5972	  31764	   7c14	MKS_CV6.elf
 Finished building: default.size.stdout
  
-Finished building: MKS_CV5.list
+Finished building: MKS_CV6.list
  
-16:59:06 **** Incremental Build of configuration Debug for project MKS_CV5 ****
+16:38:59 **** Incremental Build of configuration Debug for project MKS_CV6 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
  
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
    text	   data	    bss	    dec	    hex	filename
-  14520	     24	   1768	  16312	   3fb8	MKS_CV5.elf
+  26500	    140	   5972	  32612	   7f64	MKS_CV6.elf
 Finished building: default.size.stdout
  
-Finished building: MKS_CV5.list
+Finished building: MKS_CV6.list
  
-17:03:37 **** Incremental Build of configuration Debug for project MKS_CV5 ****
+16:39:38 **** Incremental Build of configuration Debug for project MKS_CV6 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:125:19: warning: unused variable 'lastDisplayTicks' [-Wunused-variable]
-  125 |   static uint32_t lastDisplayTicks=0;
-      |                   ^~~~~~~~~~~~~~~~
-At top level:
-../Core/Src/main.c:125:19: warning: 'lastDisplayTicks' defined but not used [-Wunused-variable]
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
  
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
    text	   data	    bss	    dec	    hex	filename
-  14580	     24	   1768	  16372	   3ff4	MKS_CV5.elf
+  26516	    140	   5972	  32628	   7f74	MKS_CV6.elf
 Finished building: default.size.stdout
  
-Finished building: MKS_CV5.list
+Finished building: MKS_CV6.list
  
-17:04:13 **** Incremental Build of configuration Debug for project MKS_CV5 ****
+16:41:02 **** Incremental Build of configuration Debug for project MKS_CV6 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:122:19: warning: unused variable 'lastDisplayTicks' [-Wunused-variable]
-  122 |   static uint32_t lastDisplayTicks = 0;
-      |                   ^~~~~~~~~~~~~~~~
-At top level:
-../Core/Src/main.c:122:19: warning: 'lastDisplayTicks' defined but not used [-Wunused-variable]
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:59,
+                 from ../Core/Src/main.c:21:
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:459:31: warning: passing argument 1 of 'xQueueGenericSend' makes pointer from integer without a cast [-Wint-conversion]
+  459 |    xQueueSend(raw_acceleration[0], &msg, 0);
+../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:477:80: note: in definition of macro 'xQueueSend'
+  477 | #define xQueueSend( xQueue, pvItemToQueue, xTicksToWait ) xQueueGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_BACK )
+      |                                                                                ^~~~~~
+../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:648:45: note: expected 'QueueHandle_t' {aka 'void *'} but argument is of type 'int16_t' {aka 'short int'}
+  648 | BaseType_t xQueueGenericSend( QueueHandle_t xQueue, const void * const pvItemToQueue, TickType_t xTicksToWait, const BaseType_t xCopyPosition ) PRIVILEGED_FUNCTION;
+      |                               ~~~~~~~~~~~~~~^~~~~~
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
  
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
    text	   data	    bss	    dec	    hex	filename
-  14580	     24	   1768	  16372	   3ff4	MKS_CV5.elf
+  26500	    140	   5972	  32612	   7f64	MKS_CV6.elf
 Finished building: default.size.stdout
  
-Finished building: MKS_CV5.list
+Finished building: MKS_CV6.list
  
-17:05:32 **** Incremental Build of configuration Debug for project MKS_CV5 ****
+16:42:02 **** Incremental Build of configuration Debug for project MKS_CV6 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
  
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
    text	   data	    bss	    dec	    hex	filename
-  14580	     24	   1768	  16372	   3ff4	MKS_CV5.elf
+  26500	    140	   5972	  32612	   7f64	MKS_CV6.elf
 Finished building: default.size.stdout
  
-Finished building: MKS_CV5.list
+Finished building: MKS_CV6.list
  
-17:06:52 **** Incremental Build of configuration Debug for project MKS_CV5 ****
+16:43:38 **** Incremental Build of configuration Debug for project MKS_CV6 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:121:19: warning: unused variable 'lastDisplayTicks' [-Wunused-variable]
-  121 |   static uint32_t lastDisplayTicks = 0;
-      |                   ^~~~~~~~~~~~~~~~
-At top level:
-../Core/Src/main.c:121:19: warning: 'lastDisplayTicks' defined but not used [-Wunused-variable]
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:59,
+                 from ../Core/Src/main.c:21:
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:459:51: warning: passing argument 2 of 'xQueueGenericSend' makes pointer from integer without a cast [-Wint-conversion]
+  459 |    xQueueSend(xVisualQueueHandle, raw_acceleration[0], 0);
+../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:477:92: note: in definition of macro 'xQueueSend'
+  477 | #define xQueueSend( xQueue, pvItemToQueue, xTicksToWait ) xQueueGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_BACK )
+      |                                                                                            ^~~~~~~~~~~~~
+../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:648:72: note: expected 'const void * const' but argument is of type 'int16_t' {aka 'short int'}
+  648 | BaseType_t xQueueGenericSend( QueueHandle_t xQueue, const void * const pvItemToQueue, TickType_t xTicksToWait, const BaseType_t xCopyPosition ) PRIVILEGED_FUNCTION;
+      |                                                     ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Core/Src/main.c:460:4: warning: 'msg' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  460 |    printf("%d\n", msg);
+      |    ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
  
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
    text	   data	    bss	    dec	    hex	filename
-  14580	     24	   1768	  16372	   3ff4	MKS_CV5.elf
+  26516	    140	   5972	  32628	   7f74	MKS_CV6.elf
 Finished building: default.size.stdout
  
-Finished building: MKS_CV5.list
+Finished building: MKS_CV6.list
  
-17:07:49 **** Incremental Build of configuration Debug for project MKS_CV5 ****
+16:45:05 **** Incremental Build of configuration Debug for project MKS_CV6 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:459:4: error: 'xVisualQueue' undeclared (first use in this function); did you mean 'xVisualQueueHandle'?
+  459 |    xVisualQueue = xQueueSend(xVisualQueueHandle, &msg, raw_acceleration[0]);
+      |    ^~~~~~~~~~~~
+      |    xVisualQueueHandle
+../Core/Src/main.c:459:4: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:45:28 **** Incremental Build of configuration Debug for project MKS_CV6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
  
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
    text	   data	    bss	    dec	    hex	filename
-  14580	     24	   1768	  16372	   3ff4	MKS_CV5.elf
+  26480	    140	   5972	  32592	   7f50	MKS_CV6.elf
 Finished building: default.size.stdout
  
-Finished building: MKS_CV5.list
+Finished building: MKS_CV6.list
  
-17:09:06 **** Incremental Build of configuration Debug for project MKS_CV5 ****
+16:47:46 **** Incremental Build of configuration Debug for project MKS_CV6 ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:121:19: warning: unused variable 'lastDisplayTicks' [-Wunused-variable]
-  121 |   static uint32_t lastDisplayTicks = 0;
-      |                   ^~~~~~~~~~~~~~~~
-At top level:
-../Core/Src/main.c:121:19: warning: 'lastDisplayTicks' defined but not used [-Wunused-variable]
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
  
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
    text	   data	    bss	    dec	    hex	filename
-  14580	     24	   1768	  16372	   3ff4	MKS_CV5.elf
+  26480	    140	   5972	  32592	   7f50	MKS_CV6.elf
 Finished building: default.size.stdout
  
-Finished building: MKS_CV5.list
- 
-17:09:41 **** Incremental Build of configuration Debug for project MKS_CV5 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
- 
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
-   text	   data	    bss	    dec	    hex	filename
-  14580	     24	   1768	  16372	   3ff4	MKS_CV5.elf
-Finished building: default.size.stdout
- 
-Finished building: MKS_CV5.list
- 
-17:11:41 **** Incremental Build of configuration Debug for project MKS_CV5 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:121:19: warning: unused variable 'lastDisplayTicks' [-Wunused-variable]
-  121 |   static uint32_t lastDisplayTicks = 0;
-      |                   ^~~~~~~~~~~~~~~~
-At top level:
-../Core/Src/main.c:121:19: warning: 'lastDisplayTicks' defined but not used [-Wunused-variable]
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
- 
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
-   text	   data	    bss	    dec	    hex	filename
-  14580	     24	   1768	  16372	   3ff4	MKS_CV5.elf
-Finished building: default.size.stdout
- 
-Finished building: MKS_CV5.list
- 
-17:14:12 **** Incremental Build of configuration Debug for project MKS_CV5 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:121:19: warning: unused variable 'lastDisplayTicks' [-Wunused-variable]
-  121 |   static uint32_t lastDisplayTicks = 0;
-      |                   ^~~~~~~~~~~~~~~~
-At top level:
-../Core/Src/main.c:121:19: warning: 'lastDisplayTicks' defined but not used [-Wunused-variable]
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
- 
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
-   text	   data	    bss	    dec	    hex	filename
-  14576	     24	   1768	  16368	   3ff0	MKS_CV5.elf
-Finished building: default.size.stdout
- 
-Finished building: MKS_CV5.list
- 
-17:17:21 **** Incremental Build of configuration Debug for project MKS_CV5 ****
-make -j4 all 
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.o"
-arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.o"
-arm-none-eabi-gcc "../Core/Src/1wire.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/1wire.d" -MT"Core/Src/1wire.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/1wire.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:122:19: warning: unused variable 'lastDisplayTicks' [-Wunused-variable]
-  122 |   static uint32_t lastDisplayTicks = 0;
-      |                   ^~~~~~~~~~~~~~~~
-At top level:
-../Core/Src/main.c:122:19: warning: 'lastDisplayTicks' defined but not used [-Wunused-variable]
-arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
-arm-none-eabi-gcc "../Core/Src/system_stm32f0xx.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f0xx.d" -MT"Core/Src/system_stm32f0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f0xx.o"
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
- 
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
-   text	   data	    bss	    dec	    hex	filename
-  14576	     24	   1768	  16368	   3ff0	MKS_CV5.elf
-Finished building: default.size.stdout
- 
-Finished building: MKS_CV5.list
- 
-17:19:01 **** Incremental Build of configuration Debug for project MKS_CV5 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:122:19: warning: unused variable 'lastDisplayTicks' [-Wunused-variable]
-  122 |   static uint32_t lastDisplayTicks = 0;
-      |                   ^~~~~~~~~~~~~~~~
-At top level:
-../Core/Src/main.c:122:19: warning: 'lastDisplayTicks' defined but not used [-Wunused-variable]
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
- 
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
-   text	   data	    bss	    dec	    hex	filename
-  14580	     24	   1776	  16380	   3ffc	MKS_CV5.elf
-Finished building: default.size.stdout
- 
-Finished building: MKS_CV5.list
- 
-17:20:09 **** Incremental Build of configuration Debug for project MKS_CV5 ****
-make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "MKS_CV5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MKS_CV5.elf
- 
-arm-none-eabi-size   MKS_CV5.elf 
-arm-none-eabi-objdump -h -S  MKS_CV5.elf  > "MKS_CV5.list"
-   text	   data	    bss	    dec	    hex	filename
-  14584	     24	   1776	  16384	   4000	MKS_CV5.elf
-Finished building: default.size.stdout
- 
-Finished building: MKS_CV5.list
- 
-17:21:38 **** Incremental Build of configuration Debug for project MKS_CV5 ****
-make -j4 all 
-arm-none-eabi-size   MKS_CV5.elf 
-   text	   data	    bss	    dec	    hex	filename
-  14584	     24	   1776	  16384	   4000	MKS_CV5.elf
-Finished building: default.size.stdout
+Finished building: MKS_CV6.list
  

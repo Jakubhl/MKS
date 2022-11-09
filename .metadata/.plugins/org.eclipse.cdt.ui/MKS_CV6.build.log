@@ -1,0 +1,17 @@
+16:47:46 **** Incremental Build of configuration Debug for project MKS_CV6 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MKS_CV6.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\Hlavacek\MKS\MKS_CV6\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MKS_CV6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MKS_CV6.elf
+ 
+arm-none-eabi-size   MKS_CV6.elf 
+arm-none-eabi-objdump -h -S  MKS_CV6.elf  > "MKS_CV6.list"
+   text	   data	    bss	    dec	    hex	filename
+  26480	    140	   5972	  32592	   7f50	MKS_CV6.elf
+Finished building: default.size.stdout
+ 
+Finished building: MKS_CV6.list
+ 
+
+16:47:47 Build Finished. 0 errors, 0 warnings. (took 1s.93ms)
+
