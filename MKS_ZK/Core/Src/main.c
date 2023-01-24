@@ -220,31 +220,31 @@ int main(void)
 		}
 
 
-
-		if (switch2_count == 1) {
-			stop_watch = 1; // STOP
-			mid_time_sec = seconds;
-			mid_time_tenth = tenthsec;
-		}
-
-		if (switch2_count == 2) { // RESET
-			seconds = 0;
-			tenthsec = 0;
-		}
-
-		if (switch2_count == 3) { // START
-			stop_watch = 0;
-		}
-
-		if (switch2_count > 3) {
-			switch2_count = 0;
-		} // udavani poctu stavu tlacitka
-
-
-
-		if (switch1_count > 1){
-			switch1_count = 0;
-		}
+		switch(switch2_count){
+			case 1:
+				stop_watch = 1; // STOP
+				mid_time_sec = seconds;
+				mid_time_tenth = tenthsec;
+			break;
+				
+			case 2:// RESET
+				seconds = 0;
+				tenthsec = 0;
+			break;
+				
+			case 3:// START
+				stop_watch = 0;
+			break;
+				
+			case 4:
+				switch2_count = 0;
+			break;
+			}
+		
+			if (switch1_count > 1){
+				switch1_count = 0;
+			}
+		
 
 
 		//switch(stopwatch){
